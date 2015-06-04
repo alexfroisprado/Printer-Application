@@ -1,5 +1,5 @@
 FROM resin/rpi-raspbian:wheezy
-MAITAINER Alex Frois Prado <alex@shoprocket.co.uk>
+MAINTAINER Alex Frois Prado <alex@shoprocket.co.uk>
 
 
 RUN apt-get update && apt-get install -y \
@@ -9,16 +9,18 @@ RUN apt-get update && apt-get install -y \
     python-dev \
     python-pip \
     python-virtualenv \
-    git \
+    git 
     
-   
+RUN pip install Pillow
+RUN pip install pyusb
+RUN pip install bitarray
 
 RUN git clone https://github.com/shoprocketprinter/Pip-Application.git
 RUN cp /Pip-Application/60-ablesystems-pyusb.rules /etc/udev/rules.d
-RUN cp /pip-Application/usblp_blacklist.conf /etc/modprobe.d
+RUN cp /Pip-Application/usblp_blacklist.conf /etc/modprobe.d
 
 Workdir /Pip-Application
 
-CMD ["python", "V1.py"]
+CMD python V1.py
 
-EXPOSE 8080
+EXPOSE 80
