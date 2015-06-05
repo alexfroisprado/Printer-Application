@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
     python \
     python-dev \
     python-pip \
-    python-virtualenv \
+    python-virtualenv
     git 
     
 RUN pip install Pillow
@@ -17,7 +17,9 @@ RUN pip install bitarray
 
 RUN git clone https://github.com/shoprocketprinter/Pip-Application.git
 RUN cp /Pip-Application/60-ablesystems-pyusb.rules /etc/udev/rules.d
+RUN cp /Pip-Application/99-input.rules /etc/udev/rules.d
 RUN cp /Pip-Application/usblp_blacklist.conf /etc/modprobe.d
+RUN cp /Pip-Application/ipv6.conf /etc/modprobe.d
 
 Workdir /Pip-Application
 
