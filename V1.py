@@ -71,8 +71,7 @@ def connect():
 
     # Find the Pipsta's specific Vendor ID and Product ID
     dev = usb.core.find(idVendor=PIPSTA_USB_VENDOR_ID,
-                        idProduct=PIPSTA_USB_PRODUCT_ID,
-                        backend=libusb0.get_backend())                       
+                        idProduct=PIPSTA_USB_PRODUCT_ID)                       
 
     if dev is None:  # if no such device is connected...
         raise IOError  # ...report error
