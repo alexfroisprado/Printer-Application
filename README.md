@@ -8,4 +8,8 @@
 
 
   
-Printer.Image: Images ready to go, just download one of the images flash it into a SD card 
+Printer.Image: Images ready to go, just download one of the images flash it into a SD card. For more information just click on the Printer.Image and get everything that you need.
+
+Resin.IO: All the information to deploy the Shoprocket's application to multiple devices and control them through a dashboard.
+
+Server: Here are the necessary files to setup a webserver to send information directly from websites to your printer
