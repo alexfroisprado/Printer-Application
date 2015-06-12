@@ -8,4 +8,4 @@
 
 
   
-Printer.Image: Images ready to go, just download one of the images flash the image into a SD card (here how: http://computers.tutsplus.com/articles/how-to-flash-an-sd-card-for-raspberry-pi--mac-53600) 
+Printer.Image: Images ready to go, just download one of the images flash it into a SD card (here how: http://computers.tutsplus.com/articles/how-to-flash-an-sd-card-for-raspberry-pi--mac-53600) plug it into the raspberry SD card slot and sequencially plug the wifi dongle in one of the usb ports. For the first time, before applying power to the system, conect the monitor to the lateral HDMI port, and the mouse and keyboard to the usb ports. Power-in the system (plug both raspberry and printer power supliers). Now you should see in your monitor a desktop environment, go to Preferences >> Wifi Configuration, select your network, insert your password and close the section.  
