@@ -21,7 +21,7 @@ Next steps of this project are:
 
 - Make it run from platforms differents from Rapberry pi.
 - Replace the two plugs for a baterry rechargeble over the night.
-- Add a 4G adaptor, so it is possible to comunicate with the printer though a cellphone.
+- Add a 4G adaptor, so it is possible to comunicate with the printer through a cellphone.
 - Project a 3D printed case, so people can Download the file and print the printer case wherever they are.
 - Make the printer production cheaper as possible. 
 - Raise people awareness of the project.
